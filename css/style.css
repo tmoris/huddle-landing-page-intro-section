@@ -101,6 +101,7 @@ a, a:hover, a:active {
 
 .hero {
   margin-block: 2em;
+
 }
 .hero__text {
 margin-block-start: 2em;
@@ -114,4 +115,11 @@ padding:0.25em 0.75em;
 border-radius: 0.25em;
 cursor: pointer;
 margin-block-start: 2em;
+}
+@media(min-width: 43.75em)  {
+  .hero {
+    margin-block: 2em;
+    display: flex;
+    gap: 1em;
+  }
 }
