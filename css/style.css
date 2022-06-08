@@ -144,26 +144,12 @@ background-color: var(--softMagenta);
 color: var(--white);
 }
   @media(min-width: 43.75em)  {
-  .hero {
-    margin-block: 2em;
-    display: flex;
-    gap: 1em;
-  }
-  
       .body {
   background-image: url(/images/bg-desktop.svg);
   background-size: cover;
   background-position: center;
 
   
-}
-.hero:first-child {
-  flex-basis: 40%;
-}
-.hero > *+* {
-  text-align: start;
-  margin-inline-start: 2em;
-
 }
 
 }  
