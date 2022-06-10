@@ -148,8 +148,11 @@ color: var(--white);
   background-image: url(/images/bg-desktop.svg);
   background-size: cover;
   background-position: center;
+}
+.hero > *+* {
+  text-align: start;
+  margin-inline-start: 2em;
 
-  
 }
 
 }  
