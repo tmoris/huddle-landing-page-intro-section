@@ -32,8 +32,10 @@ body {
   background: var(--violet);
   font-family: var(--font-opensans);
   font-weight: var(--font-weight-400);
+  font-size: 1rem;
   line-height: 1.75;
   color: var(--white);
+  
 }
 
 .body {
@@ -42,7 +44,6 @@ body {
   background-size: contain;
   background-repeat: no-repeat;
   margin: 0;
-
 }
 
 p {
@@ -117,39 +118,30 @@ a:active {
 }
 
 .hero {
-  padding-block: 2em;
   display: flex;
+  flex-direction: column;
+  padding-block: 1em 2em;
   gap: 1em;
-}
-
-.hero >* {
-  flex-basis: 100%;
 }
 
 .hero__text {
   text-align: center;
-  align-self: center;
+  padding-block: 2em;
 }
 
 .hero__text h1 {
   font-size: 2rem;
 }
-.hero__img {
-object-fit: contain;
-
-}
 
 .cta-btn {
   display: inline-block;
   background-color: var(--white);
-  padding: 0.5em 2em;
+  padding: 0.25em 2em;
   border-radius: 20em;
   cursor: pointer;
   margin-block-start: 2em;
-  transition: 150ms ease-in-out;
+  transition: 500ms ease-in-out;
   color: var(--violet);
-  font-size: 1.25em;
-
 }
 
 .cta-btn:hover,
@@ -181,19 +173,21 @@ color: inherit;
   color: var(--softMagenta);
 }
 
-@media(min-width: 43.75em) {
+@media(min-width: 50em) {
   .body {
     background-image: url(/images/bg-desktop.svg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
   }
-
-  .hero>*+* {
-    text-align: start;
-    
-
-  }
+.hero {
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+}
+.hero__text {
+  text-align: start;
+  align-self: center;
+}
   .container {
     padding-inline: 0;
   }
