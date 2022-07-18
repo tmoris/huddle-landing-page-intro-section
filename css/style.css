@@ -92,7 +92,6 @@ img {
   display: block;
   max-inline-size: 100%;
   block-size: auto;
-  aspect-ratio: 2/1;
   object-fit: cover;
   object-position: center;
 }
@@ -113,6 +112,9 @@ a:active {
 .header {
   margin-block: 2em;
 }
+.header__logo {
+  max-inline-size: 15rem;
+}
 
 .hero {
   padding-block: 2em;
@@ -126,8 +128,7 @@ a:active {
 
 .hero__text {
   text-align: center;
-  
-  
+  align-self: center;
 }
 
 .hero__text h1 {
@@ -156,14 +157,28 @@ object-fit: contain;
   background-color: var(--softMagenta);
   color: var(--white);
 }
-
+footer {
+  display: flex;
+  justify-content: space-between;
+  color: var(--white);
+}
+.media-links {
+font-size: 1.25rem;
+color: inherit;
+}
+.media-links:hover {
+  color: var(--softMagenta);
+  }
+  .media-links + .media-links {
+  margin-inline-start: 0.25em;
+    }
 .attribution {
   font-size: 11px;
   text-align: center;
 }
 
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: var(--softMagenta);
 }
 
 @media(min-width: 43.75em) {
